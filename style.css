@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Mono:wght@300;700&display=swap');
+
+body{
+    margin: 0px;
+    background-color: #CB8B68;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1,h3{
+    font-family: 'Poppins', monospace;
+}
+
+/* Header */
+
+header{
+    background-color: #2E3A3E;
+    color: #CB8B68;
+    align-items: center;
+}
+
+ .logo_titre_menu{
+    display: flex;
+    padding: 35px 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* barre de navigation du header */ 
+
+.menu{
+    display: flex;
+    padding: 0px;
+
+
+}
+
+.menu li{
+    list-style-type: none;
+
+}
+
+.menu a{
+    display: block;
+    text-decoration: none;
+    min-width: 110px;
+    /*font-size: 22px;*/
+    color: #CB8B68;
+    transition: all 0.5s;
+}
+
+.menu a.actif{
+    color: #DC9C79;
+    font-weight: bold;
+
+}
+
+.menu a:hover,
+.menu a:hover.actif{
+    color: #DC9C79;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.menu a:active,
+.menu a:active.actif{
+    font-size: 15px;
+    color: #CB8B68;
+}
+
+
+/* diapo page d'accueil */
+
+.conteneur{
+    padding-top: 155px;
+    padding-bottom: 155px;
+    max-width: 1500px;
+    margin: 50px auto;
+}
+
+.d1{
+    width: 100%;
+    height: 0px;
+    padding-top: 50%;
+    background-color: #EDEDED;
+    background-size: contain;
+    animation: fondu 15s ease-in-out infinite both;
+}
+
+@keyframes fondu{
+    0% {background-image: url("images/logo_blanc.png");} /*Prendre des images au format 16:9*/
+    33.33%{background-image: url("images/P1001296.jpg");}
+    66.67%{background-image: url("images/P1001296-2.jpg")}
+    100%{background-image: url("images/logo_blanc.png")}
+
+}
+
+
+/* A propos page d'accueil */
+
+.a_propos_page_princip{
+    width: auto;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 35px;
+
+}
+
+.a_propos_page_princip h3{
+    font-size: 46px;
+    font-weight: 300;
+}
+
+.a_propos_page_princip a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#bouton{
+    font-size: 12px;
+    font-weight: 700;
+    padding: 13px 20px;
+    border-radius: 10px;
+    background-color: white;
+    color: #CB8B68;
+    text-decoration: none;
+      
+}
+
+#bouton:active{
+    background-color: whitesmoke;
+    
+}
+
+
+/* footer */
+
+footer{
+    background-color: #2E3A3E;
+    padding: 45px;
+
+}
+
+.logo_menu_f{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_menu_f ul{
+    list-style-type: none;
+
+}
+
+.logo_menu_f li{
+    line-height: 30px;
+
+}
+
+.logo_menu_f a{
+    text-decoration: none;
+    color: #CB8B68;
+    
+}
+
+.logo_menu_f a:hover{
+    text-decoration: underline;
+
+}
+
+
+
+
+/* page galerie */
+
+.card{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.card #bouton:hover{
+    background-color: whitesmoke;
+}
+
+.rando_pre-rond{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 610px;
+    height: 610px;
+    margin: 30px;
+    background-image: url("images/img_rando_prerond/P1050188.jpg");
+    background-size: 610px;
+
+}
+
+.rando_pre-rond a{
+    box-shadow: 0px 0px 10px 0px white;
+}
+
+.reunion_2020{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 610px;
+    height: 610px;
+    margin: 30px;
+    background-image: url("images/img_reunion_ete_2020/P1000396.jpg");
+    background-size: 610px;
+}
+
+.reunion_2020 a{
+    box-shadow: 0px 0px 10px 0px white;
+}
+
+.bonneval_sur_arc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 610px;
+    height: 610px;
+    margin: 30px;
+    background-image: url("images/img_bonneval_sur_arc/P1001345.jpg");
+    background-size: 610px;
+}
+
+.bonneval_sur_arc a{
+    box-shadow: 0px 0px 10px 0px white;
+}
+
+.photos_en_vrac{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 610px;
+    height: 610px;
+    margin: 30px;
+    background-image: url("images/img_photos_en_vrac/lune-ps-final.jpg");
+    background-size: 610px;
+}
+
+.photos_en_vrac a{
+    box-shadow: 0px 0px 10px 0px white;
+}
+
+
+/* page a propos */
+
+.a_propos img{
+    width: 432px;
+    height: 648px;
+}
+
+.a_propos{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+
+}
+
+.text_a_propos{
+    margin: 30px;
+    text-align: left;
+}
+
+
+/* page contact */
+
+form{
+    padding: 60px;
+    text-align: center;
+
+}
+
+input{
+    width: 720px;
+    height: 47px;
+    margin-bottom: 8px;
+}
+
+textarea{
+    width: 720px;
+    height: 150px;
+    padding: 10px;
+}
+
+#bouton_contact{
+    width: 104px;
+    height: 48px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-family: 'Roboto Mono', monospace;
+    color: #CB8B68;
+    border-style: none;
+    background-color: white;
+}
+
+#bouton_contact:active{
+    background-color: whitesmoke;
+    border-style: inset;
+}
+
+
+
